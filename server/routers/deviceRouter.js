@@ -1,9 +1,11 @@
 const Router = require('express');
 const router = new Router();
+const deviceController = require("../controllers/deviceController");
 
-// router.get("/",)
-// router.post("/login",)
-// router.post("/:id",)
+router.get("/", deviceController.getAll)
+router.get("/:id", deviceController.getAll)
+router.post("/login", deviceController.getOne)
+
 
 
 
